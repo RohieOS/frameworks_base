@@ -4904,6 +4904,12 @@ public final class Settings {
          */
         public static final String AMBIENT_NOTIFICATION_LIGHT_AUTOMATIC = "ambient_notification_light_automatic";
 
+         /**
+         * Swipe to screenshot
+         * @hide
+         */
+        public static final String SWIPE_TO_SCREENSHOT = "swipe_to_screenshot";
+
         /**
          * helper setting to contain the current pulse reason so we can check
          * if it has been triggered from a notification or a gesture
@@ -5025,6 +5031,7 @@ public final class Settings {
             PRIVATE_SETTINGS.add(NETWORK_TRAFFIC_DYNAMIC);
             PRIVATE_SETTINGS.add(AMBIENT_NOTIFICATION_LIGHT);
             PRIVATE_SETTINGS.add(AMBIENT_NOTIFICATION_LIGHT_AUTOMATIC);
+            PRIVATE_SETTINGS.add(SWIPE_TO_SCREENSHOT);
         }
 
         /**
