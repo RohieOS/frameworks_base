@@ -4927,6 +4927,12 @@ public final class Settings {
         public static final String POCKET_JUDGE = "pocket_judge";
 
         /**
+         * Whether or not to vibrate when a touchscreen gesture is detected
+         * @hide
+         */
+        public static final String TOUCHSCREEN_GESTURE_HAPTIC_FEEDBACK = "touchscreen_gesture_haptic_feedback";
+
+        /**
          * These are all public system settings
          *
          * @hide
@@ -5042,6 +5048,7 @@ public final class Settings {
             PRIVATE_SETTINGS.add(AMBIENT_NOTIFICATION_LIGHT_AUTOMATIC);
             PRIVATE_SETTINGS.add(SWIPE_TO_SCREENSHOT);
             PRIVATE_SETTINGS.add(POCKET_JUDGE);
+            PRIVATE_SETTINGS.add(TOUCHSCREEN_GESTURE_HAPTIC_FEEDBACK);
         }
 
         /**
