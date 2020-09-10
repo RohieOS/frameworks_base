@@ -50,6 +50,7 @@ import com.android.systemui.statusbar.phone.SystemUIDialog;
 import com.android.systemui.statusbar.policy.NetworkController;
 import com.android.systemui.statusbar.policy.NetworkController.IconState;
 import com.android.systemui.statusbar.policy.NetworkController.SignalCallback;
+import com.android.systemui.statusbar.policy.KeyguardStateController;
 
 import javax.inject.Inject;
 
@@ -63,16 +64,26 @@ public class CellularTile extends QSTileImpl<SignalState> {
 
     private final CellSignalCallback mSignalCallback = new CellSignalCallback();
     private final ActivityStarter mActivityStarter;
+    private final KeyguardStateController mKeyguard;
 
     @Inject
     public CellularTile(QSHost host, NetworkController networkController,
-            ActivityStarter activityStarter) {
+            ActivityStarter activityStarter,
+            KeyguardStateController keyguardStateController) {
         super(host);
         mController = networkController;
         mActivityStarter = activityStarter;
         mDataController = mController.getMobileDataController();
         mDetailAdapter = new CellularDetailAdapter();
         mController.observe(getLifecycle(), mSignalCallback);
+        mKeyguard = keyguardStateController;
+        final KeyguardStateController.Callback callback = new KeyguardStateController.Callback() {
+            @Override
+            public void onKeyguardShowingChanged() {
+                refreshState();
+            }
+        };
+        mKeyguard.observe(this, callback);
     }
 
     @Override
@@ -98,8 +109,7 @@ public class CellularTile extends QSTileImpl<SignalState> {
         return getCellularSettingIntent();
     }
 
-    @Override
-    protected void handleClick() {
+    private void handleClickInner() {
         if (getState().state == Tile.STATE_UNAVAILABLE) {
             return;
         }
@@ -147,6 +157,18 @@ public class CellularTile extends QSTileImpl<SignalState> {
             mActivityStarter
                     .postStartActivityDismissingKeyguard(getCellularSettingIntent(),0 /* delay */);
         }
+    }
+
+    @Override
+    protected void handleClick() {
+        if (mKeyguard.isMethodSecure() && mKeyguard.isShowing()) {
+            mActivityStarter.postQSRunnableDismissingKeyguard(() -> {
+                mHost.openPanels();
+                handleClickInner();
+            });
+            return;
+        }
+        handleClickInner();
     }
 
     @Override
