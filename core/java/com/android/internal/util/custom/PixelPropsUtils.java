@@ -35,7 +35,13 @@ public class PixelPropsUtils {
             "com.google.android.apps.turbo",
             "com.google.android.apps.wallpaper",
             "com.google.android.apps.maps",
-            "com.google.android.gms"
+            "com.google.android.gms",
+            "com.google.android.apps.wellbeing",
+            "com.google.android.dialer",
+            "com.google.android.as",
+            "com.google.android.inputmethod.latin",
+            "com.google.android.apps.photos",
+            "com.google.android.apps.maps"
     };
 
     static {
