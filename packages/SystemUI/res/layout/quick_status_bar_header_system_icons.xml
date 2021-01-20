@@ -65,13 +65,6 @@
 
     </LinearLayout>
 
-    <android.widget.Space
-        android:id="@+id/space"
-        android:layout_width="0dp"
-        android:layout_height="match_parent"
-        android:layout_weight="1"
-        android:gravity="center_vertical|center_horizontal" />
-
     <com.android.systemui.statusbar.policy.NetworkTraffic
         android:id="@+id/networkTraffic"
         android:paddingTop="@dimen/status_bar_padding_top"
