@@ -35,6 +35,10 @@ public class PixelPropsUtils {
             "com.google.android.apps.turbo",
             "com.google.android.apps.wallpaper",
             "com.google.android.apps.maps",
+            "com.google.android.apps.wellbeing",
+            "com.google.android.gms",
+            "com.google.android.inputmethod.latin",
+            "com.google.android.googlequicksearchbox",
             "com.google.android.gms"
     };
 
@@ -45,7 +49,7 @@ public class PixelPropsUtils {
         propsToChange.put("DEVICE", "redfin");
         propsToChange.put("PRODUCT", "redfin");
         propsToChange.put("MODEL", "Pixel 5");
-        propsToChange.put("FINGERPRINT", "google/redfin/redfin:11/RQ1A.210105.003/7005429:user/release-keys");
+        propsToChange.put("FINGERPRINT", "google/redfin/redfin:11/RQ2A.210305.007/7124944:user/release-keys");
     }
 
     public static void setProps(String packageName) {
