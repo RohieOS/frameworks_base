@@ -7442,6 +7442,9 @@ message MetricsEvent {
      // Panel for Bluetooth
     PANEL_BLUETOOTH = 9996;
 
+    // Constants
+    CUSTOM = 9997;
+
     // QS Constants
     CUSTOM_QS = 9999;
 
