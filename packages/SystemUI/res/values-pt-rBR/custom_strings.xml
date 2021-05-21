@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2020 RohieOS
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+          http://www.apache.org/licenses/LICENSE-2.0
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!-- Caffeine tile -->
+    <string name="quick_settings_caffeine_label">Modo cafeína</string>
+    <string name="accessibility_quick_settings_caffeine_off">Modo cafeína desligado</string>
+    <string name="accessibility_quick_settings_caffeine_on">Modo cafeína ligado</string>
+
+    <!-- Heads Up QS Tile -->
+    <string name="quick_settings_heads_up_label">Notificação flutuante</string>
+    <string name="accessibility_quick_settings_heads_up_off">Notificação flutuante desativada.</string>
+    <string name="accessibility_quick_settings_heads_up_on">Notificação flutuante ativada.</string>
+    <string name="accessibility_quick_settings_heads_up_changed_off">Notificação flutuante desligada.</string>
+    <string name="accessibility_quick_settings_heads_up_changed_on">Notificação flutuante ligada.</string>
+
+    <!-- Compass QS Tile -->
+    <string name="quick_settings_compass_label">Bússola</string>
+    <string name="quick_settings_compass_value"><xliff:g id="degrees">%1$.0f</xliff:g>\u00b0 <xliff:g id="direction">%2$s</xliff:g></string>
+    <string name="quick_settings_compass_init">Iniciando\u2026</string>
+    <string name="accessibility_quick_settings_compass_off">Bússola desativada</string>
+    <string name="accessibility_quick_settings_compass_on">Bússola ativada</string>
+    <string name="accessibility_quick_settings_compass_changed_off">Bússola desligada</string>
+    <string name="accessibility_quick_settings_compass_changed_on">Bússola ligada</string>
+    <string name="quick_settings_compass_N">N</string>
+    <string name="quick_settings_compass_NE">NE</string>
+    <string name="quick_settings_compass_E">E</string>
+    <string name="quick_settings_compass_SE">SE</string>
+    <string name="quick_settings_compass_S">S</string>
+    <string name="quick_settings_compass_SW">SW</string>
+    <string name="quick_settings_compass_W">W</string>
+    <string name="quick_settings_compass_NW">NW</string>
+
+     <!-- Biometric Dialog - Use Face -->
+    <string name="biometric_dialog_button_use_face">Usar Rosto</string>
+
+    <!-- DC Dimming -->
+    <string name="quick_settings_dc_dimming_label">DC Dimming</string>
+    <string name="quick_settings_dc_brightness_mode">Modo de brilho</string>
+    <string name="quick_settings_dc_full_auto">Modo automático</string>
+
+    <!-- App Lock -->
+    <string name="applock_locked">&#160;está bloqueado</string>
+    <string name="applock_fingerprint_face">, impressão digital ou seu rosto para desbloquear</string>
+    <string name="applock_face">&#160;ou seu rosto para desbloquear</string>
+    <string name="applock_fingerprint">&#160;ou sua impressão digital para desbloquear</string>
+    <string name="applock_credential">&#160;para desbloquear</string>
+    <string name="applock_unlock">Desbloquear</string>
+
+    <!-- Dot Analog clock -->
+    <string name="clock_title_dot" translatable="false">Dot</string>
+
+</resources>
