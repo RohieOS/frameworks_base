@@ -42,6 +42,7 @@ public class PixelPropsUtils {
             "com.google.android.apps.tachyon",
             "com.google.android.apps.turboadapter",
             "com.google.android.apps.wallpaper.pixel",
+            "com.google.android.dialer",
             "com.google.android.gms.location.history",
             "com.google.android.inputmethod.latin",
             "com.google.android.soundpicker",
