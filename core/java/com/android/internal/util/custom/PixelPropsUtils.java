@@ -35,31 +35,37 @@ public class PixelPropsUtils {
     private static final String[] packagesToChange = {
             "com.android.vending",
             "com.breel.wallpapers20",
+            "com.google.android.configupdater",
             "com.google.android.apps.customization.pixel",
             "com.google.android.apps.fitness",
+            "com.google.android.apps.gcs",
+            "com.google.android.apps.maps",
+            "com.google.android.apps.messaging",
+            "com.google.android.apps.nexuslauncher",
+            "com.google.android.apps.pixelmigrate",
             "com.google.android.apps.recorder",
+            "com.google.android.apps.safetyhub",
             "com.google.android.apps.subscriptions.red",
             "com.google.android.apps.tachyon",
+            "com.google.android.apps.turbo",
             "com.google.android.apps.turboadapter",
+            "com.google.android.apps.wallpaper",
             "com.google.android.apps.wallpaper.pixel",
+            "com.google.android.apps.wellbeing",
+            "com.google.android.as",
             "com.google.android.dialer",
-            "com.google.android.gms.location.history",
+            "com.google.android.ext.services",
+            "com.google.android.gsf",
             "com.google.android.inputmethod.latin",
             "com.google.android.soundpicker",
-            "com.google.pixel.dynamicwallpapers",
-            "com.google.pixel.livewallpaper",
-            "com.google.android.apps.safetyhub",
-            "com.google.android.apps.turbo",
-            "com.google.android.apps.wallpaper",
-            "com.google.android.apps.maps",
-            "com.google.android.apps.wellbeing",
+            "com.google.intelligence.sense",
             "com.google.android.gms",
-            "com.google.android.inputmethod.latin",
-            "com.google.android.apps.nexuslauncher"
+            "com.google.android.gms.location.history",
+            "com.google.pixel.dynamicwallpapers",
+            "com.google.pixel.livewallpaper"
     };
 
     private static final String[] packagesToChangePixel3XL = {
-            "com.google.android.as",
             "com.google.android.googlequicksearchbox"
     };
 
@@ -74,14 +80,14 @@ public class PixelPropsUtils {
         propsToChange.put("DEVICE", "redfin");
         propsToChange.put("PRODUCT", "redfin");
         propsToChange.put("MODEL", "Pixel 5");
-        propsToChange.put("FINGERPRINT", "google/redfin/redfin:11/RQ3A.210705.001/7380771:user/release-keys");
+        propsToChange.put("FINGERPRINT", "google/redfin/redfin:11/RQ3A.210905.001/7511028:user/release-keys");
         propsToChangePixel3XL = new HashMap<>();
         propsToChangePixel3XL.put("BRAND", "google");
         propsToChangePixel3XL.put("MANUFACTURER", "Google");
         propsToChangePixel3XL.put("DEVICE", "crosshatch");
         propsToChangePixel3XL.put("PRODUCT", "crosshatch");
         propsToChangePixel3XL.put("MODEL", "Pixel 3 XL");
-        propsToChangePixel3XL.put("FINGERPRINT", "google/crosshatch/crosshatch:11/RQ3A.210705.001/7380771:user/release-keys");
+        propsToChangePixel3XL.put("FINGERPRINT", "google/crosshatch/crosshatch:11/RQ3A.210905.001/7511028:user/release-keys");
 	propsToChangeOGPixelXL = new HashMap<>();
         propsToChangeOGPixelXL.put("BRAND", "google");
         propsToChangeOGPixelXL.put("MANUFACTURER", "Google");
