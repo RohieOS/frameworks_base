@@ -22,6 +22,7 @@ LOCAL_REQUIRED_MODULES := \
 	AccentColorOceanOverlay \
 	AccentColorOrchidOverlay \
 	AccentColorRedOverlay \
+	AccentColorNotPinkOverlay \
 	AccentColorSpaceOverlay \
 	AccentColorGreenOverlay \
 	AccentColorPurpleOverlay \
